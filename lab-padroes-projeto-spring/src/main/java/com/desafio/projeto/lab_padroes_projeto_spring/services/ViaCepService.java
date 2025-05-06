@@ -9,6 +9,6 @@ import com.desafio.projeto.lab_padroes_projeto_spring.model.Endereco;
 @FeignClient(name = "viacep", url = "https://viacep.com.br/ws")
 public interface ViaCepService {
 
-	@GetMapping("{cep}/json")
+	@GetMapping("/{cep}/json")
 	Endereco findCep(@PathVariable("cep") String cep);
 }

@@ -1,11 +1,10 @@
 package com.desafio.projeto.lab_padroes_projeto_spring.model;
 
-import org.hibernate.annotations.ManyToAny;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Cliente {
@@ -15,7 +14,7 @@ public class Cliente {
 	private Long id;
 	private String nome;
 
-	@ManyToAny
+	@ManyToOne
 	private Endereco endereco;
 
 	public Long getId() {
