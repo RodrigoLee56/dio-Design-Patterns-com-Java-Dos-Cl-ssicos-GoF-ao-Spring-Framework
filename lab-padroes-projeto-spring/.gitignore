@@ -1,0 +1,48 @@
+# Eclipse / STS
+.settings/
+.project
+.classpath
+.apt_generated/
+.factorypath
+.springBeans
+
+# Diretórios de build
+/bin/
+/build/
+/target/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Arquivos do Eclipse STS
+.reeclipse/
+.tern-project
+.idea/
+
+# Arquivos de configuração pessoais
+*.iml
+*.iws
+*.ipr
+*.launch
+*.prefs
+
+# Configuração de ambiente local
+.env
+*.local
+*.secret
